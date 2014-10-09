@@ -14,10 +14,22 @@ The codes in this repository were used in the experiments of the following paper
 
 For academic use, please cite the paper above.
 
+
 ## Directory
 
 + src: source codes
 + scripts: scripts
+
+## How to use (on UNIX-like systems)
+
+Install `libboost_program_options-mt` and `libfftw3`.
+then
+
+    cd your_working_directory
+    git clone https://github.com/tachi-hi/HPSS
+    cd src; make; cd ..
+
+Then two programs `HPSS_separation` and `HPSS_smoothness_eval` will be generated
 
 ## Other Resources
 ### Sliding version
