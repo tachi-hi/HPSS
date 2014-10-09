@@ -27,9 +27,14 @@ then
 
     cd your_working_directory
     git clone https://github.com/tachi-hi/HPSS
-    cd src; make; cd ..
+    cd HPSS/src; make; cd -
 
-Then two programs `HPSS_separation` and `HPSS_smoothness_eval` will be generated
+Then two programs `HPSS_separation` and `HPSS_smoothness_eval` will be generated.
+
+Note that the codes are not refactored sufficiently yet.
+
++ The help message of `HPSS_smoothness_eval` may not help you.
+
 
 ## Other Resources
 ### Sliding version
