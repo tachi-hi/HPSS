@@ -1,0 +1,4 @@
+*.o
+depend.inc
+HPSS_separation
+HPSS_smoothness_eval
