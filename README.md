@@ -51,3 +51,8 @@ Note that the algorithm used in the program below is not identical to the one de
 
 [http://hil.t.u-tokyo.ac.jp/software/HPSS/](http://hil.t.u-tokyo.ac.jp/software/HPSS/)
 
+### Links to other softwares used in the above paper
+
++ [http://openblissart.github.io/openBliSSART/](OpenBliSSART)
++ [http://bass-db.gforge.inria.fr/bss_eval/](BSS_EVAL)
+
