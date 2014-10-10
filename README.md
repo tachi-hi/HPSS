@@ -53,6 +53,6 @@ Note that the algorithm used in the program below is not identical to the one de
 
 ### Links to other softwares used in the above paper
 
-+ [http://openblissart.github.io/openBliSSART/](OpenBliSSART)
-+ [http://bass-db.gforge.inria.fr/bss_eval/](BSS_EVAL)
++ [OpenBliSSART](http://openblissart.github.io/openBliSSART/)
++ [BSS_EVASL](http://bass-db.gforge.inria.fr/bss_eval/)
 
