@@ -35,6 +35,10 @@ Note that the codes are not refactored sufficiently yet.
 
 + The help message of `HPSS_smoothness_eval` may not help you.
 
+### Known bugs (to be fixed)
+
+This program accepts only the monaural (1ch) wav files.
+If you apply the program to a stereo wav file, it will emit the segmentation fault and halt.
 
 ## Other Resources
 ### Sliding version
