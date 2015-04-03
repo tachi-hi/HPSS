@@ -1,14 +1,14 @@
 # Smoothness Eval
 
-## Experiment
+## Evaluation
 
 You first need to do following.
 
 + Build the HPSS in this repository, and place the obtained executable code in the suitable directory.
 + Install `sox`
-+ Place some `.wav` files in the directory `./experiment/wav`
++ Place some `.wav` files in the directory `./evaluation/wav`
 
-Then, move to the directory `./experiment`, run the `./script.sh`, and a `.csv` file will be created.
+Then, move to the directory `./evaluation`, run the `./script.sh`, and a `.csv` file will be created.
 You have to edit this file manually suitably.
 An example of the edited `.csv` file is `./plot/result.csv`
 
