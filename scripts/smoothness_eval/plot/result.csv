@@ -1,0 +1,36 @@
+Inst,filename,InstType,SmoothType,smoothness
+Piano,011PFNOM,a,alpha,0.114466
+Piano,011PFNOM,a,beta,0.675962
+Harpsichord,031HC88M,a,alpha,0.092286
+Harpsichord,031HC88M,a,beta,0.770345
+Organ,061ORNOM,a,alpha,0.057366
+Organ,061ORNOM,a,beta,0.914766
+Guitar,091CGAFM,a,alpha,0.110779
+Guitar,091CGAFM,a,beta,0.956705
+Electric Bass,141EBPNM,a,alpha,0.0388579
+Electric Bass,141EBPNM,a,beta,0.807933
+Violin,151VNNOF,a,alpha,0.252837
+Violin,151VNNOF,a,beta,0.792071
+Trumpet,211TRM7M,a,alpha,0.0515935
+Trumpet,211TRM7M,a,beta,0.993269
+Alto Saxophone,261ASNOM,a,alpha,0.121755
+Alto Saxophone,261ASNOM,a,beta,0.972615
+Flute,331FLNOM,a,alpha,0.03769
+Flute,331FLNOM,a,beta,1.0161
+Castanet,411CNNO3,a,alpha,1.24184
+Castanet,411CNNO3,a,beta,0.102493
+Bass Drum,421BD2N3,a,alpha,0.717293
+Bass Drum,421BD2N3,a,beta,0.286792
+High Hat,421HHMP3,a,alpha,0.311925
+High Hat,421HHMP3,a,beta,0.329761
+Tom Tom,421HTNO3,a,alpha,0.531895
+Tom Tom,421HTNO3,a,beta,0.641504
+Snare Drum,421SD3N3,a,alpha,0.862627
+Snare Drum,421SD3N3,a,beta,0.317678
+Cymbal,421Y1MN3,a,alpha,0.183514
+Cymbal,421Y1MN3,a,beta,0.313869
+Tambourine,441TMNO3,a,alpha,0.697497
+Tambourine,441TMNO3,a,beta,0.148303
+Timpani,201T1H13,a,alpha,0.279155
+Timpani,201T1H13,a,beta,0.501424
+
