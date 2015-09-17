@@ -22,8 +22,16 @@ For academic use, please cite the paper above.
 
 ## How to use (on UNIX-like systems)
 
-Install `libboost_program_options-mt` and `libfftw3`.
-then
+### Libraries
+Install `boost` and `fftw3` as follows,
+
+    # apt
+    sudo apt-get install libboost-dev libfftw3-dev
+    
+    # yum
+    sudo yum install boost-devel fftw3-devel
+    
+### Build
 
     cd your_working_directory
     git clone https://github.com/tachi-hi/HPSS
