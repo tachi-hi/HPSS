@@ -49,7 +49,8 @@ This program accepts only the monaural (1ch) wav files.
 If you apply the program to a stereo wav file, it will emit the segmentation fault and halt.
 
 ## Other Resources
-### Sliding version
+### Other HPSS Implementation
+#### Sliding version
 
 Another implementation of HPSS is availabel below.
 Note that the algorithm used in the program below is not identical to the one described in the paper above (and the codes in this repository).
@@ -57,11 +58,14 @@ Note that the algorithm used in the program below is not identical to the one de
 [https://github.com/tachi-hi/slidingHPSS](https://github.com/tachi-hi/slidingHPSS)
 
 
-### Windows GUI version 
+#### Windows GUI version 
 GUI version (not coded by me) is available below.
 Note that the algorithm used in the program below is not identical to the one described in the paper above (and the codes in this repository).
 
 [http://hil.t.u-tokyo.ac.jp/software/HPSS/](http://hil.t.u-tokyo.ac.jp/software/HPSS/)
+
+#### Audacity 
+see http://ismir2015.uma.es/LBD/LBD16.pdf
 
 ### Links to other softwares used in the above paper
 
