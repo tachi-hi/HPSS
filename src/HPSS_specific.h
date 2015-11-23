@@ -57,6 +57,33 @@ private:
 
 
 // -------------------------------------------------------------------------------------------------
+// Idiv sliding
+// -------------------------------------------------------------------------------------------------
+class HPSS_IDIV_sliding : public HPSS{
+public:
+	HPSS_IDIV_sliding(const twoDimArray<double>& W) : 
+		HPSS(W),
+		th (W.get_n_frame(), W.get_n_freq()),
+		win_start(0){
+		for(int t = 0; t < n_frame; t++){
+			for(int f = 0; f < n_freq; f++){
+				th[t][f] = 0.5;
+			}
+		}
+	}
+
+	~HPSS_IDIV_sliding(){}
+
+	void update(void);
+	double objective(void){	
+		return idiv(H, P, W, n_frame, n_freq, w, c, M);
+	}
+private:
+	twoDimArray<double> th;
+	int win_start;
+};
+
+// -------------------------------------------------------------------------------------------------
 // Fitzgerald
 // -------------------------------------------------------------------------------------------------
 class HPSS_median : public HPSS{

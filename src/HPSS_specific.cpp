@@ -105,6 +105,35 @@ void HPSS_IDIV::update(void){
 	}
 }
 
+
+// -------------------------------------------------------------------------------------------------
+// Idiv sliding update
+// -------------------------------------------------------------------------------------------------
+
+void HPSS_IDIV_sliding::update(void){
+const int WIN_SIZE = 30;
+const int N_ITERATION = 10;
+	for(int iii = 0; iii != N_ITERATION; iii++){
+		for(int n = this->win_start; n < min(n_frame, this->win_start + WIN_SIZE); n++){
+			for(int k = 0; k < n_freq; k++){
+
+				double A1 = 2 + c;
+				double B1 = n_mean(H, n, k, M);
+				double C1 = c * th[n][k] * W[n][k] * W[n][k];
+				double A2 = 2 + c / w;
+				double B2 = k_mean(P, n, k, M);
+				double C2 = c/w * (1 - th[n][k]) * W[n][k] * W[n][k];
+
+				H[n][k]  = (B1 + sqrt(B1 * B1 + A1 * C1)) / A1;
+				P[n][k]  = (B2 + sqrt(B2 * B2 + A2 * C2)) / A2;
+				th[n][k] = H[n][k] * H[n][k] / (H[n][k] * H[n][k] + P[n][k] * P[n][k] + 1e-100);
+			}
+		}
+	}
+	this->win_start++;
+}
+
+
 // -------------------------------------------------------------------------------------------------
 // FitzGerald's median filtering 
 // -------------------------------------------------------------------------------------------------

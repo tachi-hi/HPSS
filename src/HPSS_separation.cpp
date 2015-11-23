@@ -106,6 +106,7 @@ int main(int argc, char**argv){
 	if(opt.HPSS_type == command_line_options::hm2_2)  hpss = new HPSS_HM2_2(abs_spec);
 	if(opt.HPSS_type == command_line_options::idiv)   hpss = new HPSS_IDIV (abs_spec);
 	if(opt.HPSS_type == command_line_options::median) hpss = new HPSS_median (abs_spec);
+	if(opt.HPSS_type == command_line_options::idiv_sliding)   hpss = new HPSS_IDIV_sliding (abs_spec);
 
 	/********************************************************************************************
 	Initial value and parameters

@@ -33,7 +33,7 @@ public:
 			("w,w",       value<double>()->default_value(1),   "w.")
 			("c,c",       value<double>()->default_value(0.01),   "c.")
 			("iteration,t", value<signed int>()->default_value(30), "Number of Iterations")
-			("version,v", value<string>()->default_value("idiv"), "Version of HPSS. hm2_1, hm2_2, idiv, median")
+			("version,v", value<string>()->default_value("idiv"), "Version of HPSS. hm2_1, hm2_2, idiv, median, idiv_sliding")
 			("postprocess,p",  value<double>()->default_value(0), "postprocessing: binary mask = 0, do nothing = -1, Wiener mask : factor (> 0)")
 			("display,d",  value<int>()->default_value(0), "display information: 0, do not display information: other")
 			("window,W", value<string>()->default_value("sine"), "Window function: sine, hann")
@@ -75,6 +75,7 @@ public:
 				  vm["version"].as<string>() == "hm2_1" ? hm2_1
 				: vm["version"].as<string>() == "hm2_2" ? hm2_2
 				: vm["version"].as<string>() == "idiv"  ? idiv
+				: vm["version"].as<string>() == "idiv_sliding"  ? idiv_sliding
 				: vm["version"].as<string>() == "median"  ? median
 				: idiv ; /*default*/
 			display_flag =  vm["display"].as<int>() == 0;
@@ -85,7 +86,7 @@ public:
 		}
 	}
 
-	enum {hm2_1, hm2_2, idiv, median} HPSS_type;
+	enum {hm2_1, hm2_2, idiv, median, idiv_sliding} HPSS_type;
 	enum {wiener, none, binary} Wiener_flag;
 	int iteration_time;
 	string input_file_name, H_file_name, P_file_name;
