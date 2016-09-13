@@ -67,6 +67,10 @@ Note that the algorithm used in the program below is not identical to the one de
 #### Audacity 
 see http://ismir2015.uma.es/LBD/LBD16.pdf
 
+#### librosa
+
+[librosa](http://librosa.github.io/librosa/), a audio processing module for python, also contains a module named [hpss](http://librosa.github.io/librosa/generated/librosa.decompose.hpss.html), though the algorithm is different from the one described in the above paper.
+
 ### Links to other softwares used in the above paper
 
 + [OpenBliSSART](http://openblissart.github.io/openBliSSART/)
