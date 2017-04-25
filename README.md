@@ -62,7 +62,7 @@ Note that the algorithm used in the program below is not identical to the one de
 GUI version (not coded by me) ~~is~~ <font color="Red">was</font> available below.
 Note that the algorithm used in the program below is not identical to the one described in the paper above (and the codes in this repository).
 
-- ~~http://hil.t.u-tokyo.ac.jp/downloads~~ ... link expired
+- ~~http://hil.t.u-tokyo.ac.jp/pages/downloads.html~~ ... link expired
 
 #### Audacity 
 see http://ismir2015.uma.es/LBD/LBD16.pdf
