@@ -5,10 +5,19 @@
 This software separates a music audio signal (monaural PCM (`.wav`) format) to two components, "harmonic" and "percussive."
 
 
-The codes in this repository were used in the experiments of the following paper.
+The codes in this repository were used in the experiments of the following paper. [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6882210)]
 
-- Hideyuki Tachibana, Nobutaka Ono, Hirokazu Kameoka, Shigeki Sagayama, “Harmonic Percussive Sound Separation Based on Anisotropic Smoothness of Spectrograms,” IEEE/ACM Trans. Audio, Speech and Language Processing, Vol. 22, No. 12, pp. 2059–2073, Dec. 2014.
-
+```
+@article{tachibana2014hpss,
+  author={Hideyuki Tachibana and Nobutaka Ono and Hirokazu Kameoka and Shigeki Sagayama},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+  title={Harmonic/Percussive Sound Separation Based on Anisotropic Smoothness of Spectrograms}, 
+  year={2014},
+  volume={22},
+  number={12},
+  pages={2059-2073},
+}
+```
 
 ## LICENSE
 
