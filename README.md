@@ -5,13 +5,13 @@
 This software separates a music audio signal (monaural PCM (`.wav`) format) to two components, "harmonic" and "percussive."
 
 
-The codes in this repository were used in the experiments of the following paper. [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6882210)]
+The codes in this repository were used in the experiments of the following paper. [[IEEE Xplore](https://doi.org/10.1109/TASLP.2014.2351131)]
 
-```
+```bibtex
 @article{tachibana2014hpss,
   author={Hideyuki Tachibana and Nobutaka Ono and Hirokazu Kameoka and Shigeki Sagayama},
-  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
-  title={Harmonic/Percussive Sound Separation Based on Anisotropic Smoothness of Spectrograms}, 
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  title={Harmonic/Percussive Sound Separation Based on Anisotropic Smoothness of Spectrograms},
   year={2014},
   volume={22},
   number={12},
@@ -21,8 +21,8 @@ The codes in this repository were used in the experiments of the following paper
 
 ## LICENSE
 
-For academic use, please cite the paper above.
-
+- [MIT](LICENSE)
+- For academic use, please cite the paper above.
 
 ## Directory
 
@@ -36,10 +36,10 @@ Install `boost` and `fftw3` as follows,
 
     # apt
     sudo apt-get install libboost-dev libfftw3-dev
-    
+
     # yum
     sudo yum install boost-devel fftw3-devel
-    
+
 ### Build
 
     cd your_working_directory
@@ -73,7 +73,7 @@ Note that the algorithm used in the program below is not identical to the one de
 
 - ~~http://hil.t.u-tokyo.ac.jp/pages/downloads.html~~ ... link expired
 
-#### Audacity 
+#### Audacity
 see http://ismir2015.uma.es/LBD/LBD16.pdf
 
 #### librosa
@@ -84,4 +84,3 @@ see http://ismir2015.uma.es/LBD/LBD16.pdf
 
 + [OpenBliSSART](http://openblissart.github.io/openBliSSART/)
 + [BSS EVAL](http://bass-db.gforge.inria.fr/bss_eval/)
-
