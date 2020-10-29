@@ -1,5 +1,9 @@
 # HPSS (Harmonic/Percussive Sound Separation)
 
+[![](https://github.com/tachi-hi/HPSS/workflows/build/badge.svg)](https://github.com/tachi-hi/HPSS/actions?query=workflow%3Abuild)
+[![](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+
 ## About
 
 This software separates a music audio signal (monaural PCM (`.wav`) format) to two components, "harmonic" and "percussive."
