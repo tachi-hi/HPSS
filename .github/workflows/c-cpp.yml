@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: apt
-      run: sudo apt-get update & sudo apt-get install libboost-dev libfftw3-dev
+      run: sudo apt-get update & sudo apt-get install libboost-dev libboost-thread-dev libfftw3-dev 
     - name: make
       run: cd src && make
