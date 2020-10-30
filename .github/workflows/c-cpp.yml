@@ -1,0 +1,19 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: apt
+      run: sudo apt-get update & sudo apt-get install g++ libboost-all-dev libfftw3-dev 
+    - name: make
+      run: cd src && make

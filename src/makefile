@@ -1,14 +1,14 @@
 
 ## commands and flags
 CXX = g++
-CXXFLAGS = -O3 #-march=native #-g -pg #-Wall #-persist?
+CXXFLAGS = -O3 -Wall -std=c++11 #-march=native #-g -pg #-persist?
 RM = rm -f
 
 ## Libraries
 L_PTHREAD       = -lpthread
-L_BOOST_OPTIONS = -lboost_program_options-mt
+L_BOOST_OPTIONS = -lboost_program_options
 L_FFTW3         = -lfftw3
-LIBS = $(L_PHREAD) $(L_BOOST_OPTIONS) $(L_FFTW3) $(L_PORTAUDIO) -lm
+LIBS = $(L_PHREAD) $(L_BOOST_OPTIONS) $(L_FFTW3) -lm
 
 
 ## exe files
