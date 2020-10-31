@@ -1,6 +1,7 @@
 # HPSS (Harmonic/Percussive Sound Separation)
 
 [![](https://github.com/tachi-hi/HPSS/workflows/build/badge.svg)](https://github.com/tachi-hi/HPSS/actions?query=workflow%3Abuild)
+[![](https://github.com/tachi-hi/HPSS/workflows/LaTeXplot/badge.svg)](https://github.com/tachi-hi/HPSS/actions?query=workflow%3ALaTeXplot)
 [![](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 

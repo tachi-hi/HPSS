@@ -1,0 +1,25 @@
+name: LaTeXplot
+
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: apt
+        run : |
+            sudo apt-get update
+            sudo apt-get install r-base-dev ghostscript
+      - name : run R
+        run : |
+            sudo Rscript -e "install.packages('ggplot2', repos='http://cran.rstudio.com/')"
+            cd scripts/smoothness_eval/plot; R --vanilla --slave < smoothness.R; cd -
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@master
+        with:
+            working_directory : scripts/smoothness_eval/plot
+            root_file: convertfig.tex
+      - name: dvipdf
+        run : |
+          dvipdf convertfig
