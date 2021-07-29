@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Tachibana
+  given-names: Hideyuki
+  orcid: "https://orcid.org/0000-0001-5162-1294"
+title: "HPSS"
+version: 1.0.0
+date-released: 2014-10-06
+url: "https://github.com/tachi-hi/HPSS"
+license: "MIT"
+references:
+  - type: article
+    authors:
+    - family-names: Tachibana
+      given-names: Hideyuki
+      orcid: "https://orcid.org/0000-0001-5162-1294"
+    - family-names: Ono
+      given-names: Nobutaka 
+    - family-names: Kameoka
+      given-names: Hirokazu
+    - family-names: Sagayama
+      given-names: Shigeki
+    title: "Harmonic/Percussive Sound Separation Based on Anisotropic Smoothness of Spectrograms"
+    journal: "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+    volume: 22
+    number: 12
+    start: 2059
+    pages: 15
+    year: 2014
+    publisher: IEEE
+    doi: 10.1109/TASLP.2014.2351131
+    
