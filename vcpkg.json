@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "hpss",
+  "version": "1.0.0",
+  "description": "Harmonic/Percussive Sound Separation",
+  "dependencies": [
+    "fftw3",
+    "boost-program-options"
+  ]
+}

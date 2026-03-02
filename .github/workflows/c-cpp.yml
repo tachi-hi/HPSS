@@ -2,18 +2,15 @@ name: build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: apt
-      run: sudo apt-get update & sudo apt-get install g++ libboost-program-options-dev libfftw3-dev 
-    - name: make
-      run: cd src && make
+    - uses: actions/checkout@v4
+    - name: Build
+      run: ./build.sh

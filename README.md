@@ -36,24 +36,46 @@ The codes in this repository were used in the experiments of the following paper
 
 ## How to use (on UNIX-like systems)
 
-### Libraries
-Install `boost` and `fftw3` as follows,
+### Quick Build (recommended)
 
-    # apt
-    sudo apt-get install libboost-dev libfftw3-dev
-
-    # yum
-    sudo yum install boost-devel fftw3-devel
-
-### Build
-
-    cd your_working_directory
     git clone https://github.com/tachi-hi/HPSS
+    cd HPSS
+    ./build.sh
+
+This script automatically handles everything: installing CMake (if needed), fetching [vcpkg](https://github.com/microsoft/vcpkg), resolving dependencies (`boost`, `fftw3`), and building the project.
+
+Two executables will be generated in `build/`:
+- `build/HPSS_separation`
+- `build/HPSS_smoothness_eval`
+
+Other build commands:
+
+    ./build.sh debug     # Debug build
+    ./build.sh clean     # Remove build artifacts
+
+### Manual Build (with system libraries)
+
+If you prefer to install dependencies manually:
+
+    # Debian/Ubuntu
+    sudo apt-get install cmake libboost-program-options-dev libfftw3-dev
+
+    # macOS (Homebrew)
+    brew install cmake boost fftw
+
+Then build with CMake:
+
+    cmake -B build
+    cmake --build build
+
+### Legacy Build (Makefile)
+
+The original Makefile is still available in `src/`:
+
+    sudo apt-get install libboost-dev libfftw3-dev
     cd HPSS/src; make; cd -
 
-Then two programs `HPSS_separation` and `HPSS_smoothness_eval` will be generated.
-
-Note that the codes are not refactored sufficiently yet.
+### Notes
 
 + The help message of `HPSS_smoothness_eval` may not help you.
 
